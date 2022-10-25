@@ -36,6 +36,7 @@ jobs:
       # You may pin to the exact commit or the version.
       # uses: ericksonlbs/jaguarportal-submit@462ed1aa07cddecc5a68a7d6596dd151c3102829
       uses: ericksonlbs/jaguarportal-submit@v0.0.1-snapshot
+      if: always()
       with:
         # The key of the Jaguar Portal project
         jaguarPortalProjectKey: JaguarIMC
