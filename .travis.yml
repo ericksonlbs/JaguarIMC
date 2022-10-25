@@ -1,0 +1,16 @@
+arch: amd64
+
+language: java
+
+jdk: 
+  - openjdk11
+
+cache:
+  directories:
+  - $HOME/.m2
+
+before_script:
+  - make prepare
+  
+script:
+  - make build_core
