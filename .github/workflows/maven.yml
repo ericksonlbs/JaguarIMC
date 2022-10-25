@@ -32,3 +32,18 @@ jobs:
       run: mvn install:install-file -Dfile=br.usp.each.saeg.jaguar.core/lib/org.jacoco.core-0.7.6.jar -DgroupId=br.usp.each.saeg -DartifactId=org.jacoco.core -Dversion=0.7.6 -Dpackaging=jar
     - name: Build
       run: mvn clean install
+    - name: jaguarportal-submit
+      # You may pin to the exact commit or the version.
+      # uses: ericksonlbs/jaguarportal-submit@462ed1aa07cddecc5a68a7d6596dd151c3102829
+      uses: ericksonlbs/jaguarportal-submit@v0.0.1-snapshot
+      with:
+        # The key of the Jaguar Portal project
+        jaguarPortalProjectKey: JaguarIMC
+        # The name of the Jaguar Portal project
+        jaguarPortalProjectName: "Jaguar IMC"
+        # The Jaguar Portal server URL
+        jaguarPortalHostUrl: https://jaguarportalcloud.io
+        # The APIKey from Jaguar Portal
+        jaguarPortalAPIKey:  ${{ secrets.jaguarPortalAPIKey }}
+        # The path analisys
+        jaguarPortalPathAnalisys: /br.usp.each.saeg.jaguar.example/.jaguar
