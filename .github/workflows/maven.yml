@@ -43,7 +43,7 @@ jobs:
         # The name of the Jaguar Portal project
         jaguarPortalProjectName: "Jaguar IMC"
         # The Jaguar Portal server URL
-        jaguarPortalHostUrl: https://jaguarportalcloud.io
+        jaguarPortalHostUrl: https://jaguarportal-api.azurewebsites.net
         # The APIKey from Jaguar Portal
         jaguarPortalAPIKey:  ${{ secrets.jaguarPortalAPIKey }}
         # The path analisys
