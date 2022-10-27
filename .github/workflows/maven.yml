@@ -34,7 +34,7 @@ jobs:
       run: mvn clean install
     - name: jaguarportal-submit
       # You may pin to the exact commit or the version.
-      # uses: ericksonlbs/jaguarportal-submit@462ed1aa07cddecc5a68a7d6596dd151c3102829
+      # uses: ericksonlbs/jaguarportal-submit@e749a1f066dd50ef76ac3bc163df650dc6cec7aa
       uses: ericksonlbs/jaguarportal-submit@v0.0.1-snapshot
       if: always()
       with:
@@ -46,5 +46,7 @@ jobs:
         jaguarPortalHostUrl: https://jaguarportal-api.azurewebsites.net
         # The APIKey from Jaguar Portal
         jaguarPortalAPIKey:  ${{ secrets.jaguarPortalAPIKey }}
-        # The path analisys
+        # The analisys path
         jaguarPortalPathAnalisys: /br.usp.each.saeg.jaguar.example/.jaguar
+        # The classes path
+        jaguarPortalClassesPath: /br.usp.each.saeg.jaguar.example/target/src/main/java
