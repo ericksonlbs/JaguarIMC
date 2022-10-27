@@ -47,6 +47,6 @@ jobs:
         # The APIKey from Jaguar Portal
         jaguarPortalAPIKey:  ${{ secrets.jaguarPortalAPIKey }}
         # The analisys path
-        jaguarPortalPathAnalisys: /br.usp.each.saeg.jaguar.example/.jaguar
+        jaguarPortalAnalisysPath: /br.usp.each.saeg.jaguar.example/.jaguar
         # The classes path
         jaguarPortalClassesPath: /br.usp.each.saeg.jaguar.example/target/src/main/java
