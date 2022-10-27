@@ -49,4 +49,4 @@ jobs:
         # The analisys path
         jaguarPortalAnalisysPath: /br.usp.each.saeg.jaguar.example/.jaguar
         # The classes path
-        jaguarPortalClassesPath: /br.usp.each.saeg.jaguar.example/target/src/main/java
+        jaguarPortalSourcePath: /br.usp.each.saeg.jaguar.example/src/main/java
