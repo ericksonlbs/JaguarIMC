@@ -49,4 +49,10 @@ jobs:
         # The analisys path
         jaguarPortalAnalisysPath: /br.usp.each.saeg.jaguar.example/.jaguar
         # The classes path
-        jaguarPortalSourcePath: /br.usp.each.saeg.jaguar.example/src/main/java
+        jaguarPortalSourcePath: /br.usp.each.saeg.jaguar.example/src/main/java        
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact
+        path: /br.usp.each.saeg.jaguar.example/.jaguar/control-flow.xml
+        re tention-days: 5
