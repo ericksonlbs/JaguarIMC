@@ -56,4 +56,4 @@ jobs:
       with:
         name: my-artifact
         path: /br.usp.each.saeg.jaguar.example/.jaguar/control-flow.xml
-        re tention-days: 5
+        retention-days: 5
