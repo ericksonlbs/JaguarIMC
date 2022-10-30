@@ -52,7 +52,6 @@ jobs:
         jaguarPortalSourcePath: /br.usp.each.saeg.jaguar.example/src/main/java        
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
-      if: always()
       with:
         name: jaguar
         path: br.usp.each.saeg.jaguar.example/.jaguar
